@@ -1,0 +1,55 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "lucky toss",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "LuckyToss",
+                    "slots": [
+                        {
+                            "name": "action",
+                            "type": "ActionType"
+                        }
+                    ],
+                    "samples": [
+                        "i will choose {action}",
+                        "{action}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "ActionType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "heads"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tails"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
